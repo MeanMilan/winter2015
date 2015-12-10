@@ -3,7 +3,7 @@
 var adventure = require('adventure');
 var shop = adventure('example-adventure');
 
-var problems = [ 'dinosaurs', 'robots', 'wowsers', 'allzero', 'countsundays' ];
+var problems = [ '0_myname', '1_allzero', '2_countsundays' ];
 problems.forEach(function (prob) {
     shop.add(prob, function () { return require('./problems/' + prob) });
 });
