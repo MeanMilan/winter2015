@@ -1,0 +1,3 @@
+Implement upperCase function (limited to first 127 ASCII character):
+
+  module.exports = function(string_input) { ... }
