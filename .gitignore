@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -28,6 +29,11 @@ Temporary Items
 logs
 *.log
 npm-debug.log*
+=======
+# Logs
+logs
+*.log
+>>>>>>> 3eefd95a72d7eac34206911829732e253ac498e8
 
 # Runtime data
 pids
@@ -50,6 +56,7 @@ coverage
 build/Release
 
 # Dependency directory
+<<<<<<< HEAD
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
 
@@ -58,3 +65,7 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+=======
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+>>>>>>> 3eefd95a72d7eac34206911829732e253ac498e8
