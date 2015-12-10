@@ -1,0 +1,2 @@
+Count the most popular word (more then 4 character) in Moby Dick full text.
+You can find the complete txt in PATH/data/mobydick.txt
