@@ -1,3 +1,3 @@
-Write a module that export a JSON with `name` property of type string.
+Write a module that export a JSON with `username` property of type string.
 It will be your name in the competition.
 Do not use bad words please : )

@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var verify = require('adventure-verify');
+var sender = require('../../sender');
 
 exports.problem = fs.createReadStream(__dirname + '/problem.txt');
 exports.solution = fs.createReadStream(__dirname + '/solution.txt');
@@ -18,6 +19,8 @@ exports.verify = verify({ modeReset: true }, function (args, t) {
   var higher = f(input);
 
   t.equal(higher, 'before', 'ok');
+
+  sender.send('ex-4');
 
   t.end();
 
