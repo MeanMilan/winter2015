@@ -1,0 +1,33 @@
+Given a JSON with a list of movies with title and Id,
+write a function that group them by title,
+like the following example.
+
+
+Input:
+[
+  {
+    "title": "Batman",
+    "genre": "Action"
+  },
+  {
+    "title": "Indiana Jones",
+    "genre": "Action"
+  },
+  {
+    "title": "Inside out",
+    "genre": "Animation"
+  }
+]
+
+
+Output:
+[
+  {
+    "genre": "Action",
+    "titles": ["Batman", "Indiana Jones"]
+  },
+  {
+    "genre": "Animation",
+    "titles": ["Inside out"]
+  }
+]
