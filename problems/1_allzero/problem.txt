@@ -1,7 +1,7 @@
-Write a program that exports a function that,
-given an undefined number of arguments as Number
-return true if all are zero.
-The program must be less then 140 character!
+Export a function that
+given an undefined number of arguments
+return true if all of them are 0.
+The program must be less then 140 characters!
 
 
 -------------------------------------------------------------------------------

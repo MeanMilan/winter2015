@@ -1,4 +1,4 @@
-Count the most frequent word (more then 4 character) in the given sentece.
+Count the most frequent word (more then 4 character) in the given sentence.
 
 
 -------------------------------------------------------------------------------

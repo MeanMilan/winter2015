@@ -1,21 +1,24 @@
 var fs = require('fs');
 var path = require('path');
-var verify = require('adventure-verify');
-var sender = require('../../sender');
+var verify = require('../../mmverify');//'adventure-verify');
+var parser = require('tap-parser');
 
 exports.problem = fs.createReadStream(__dirname + '/problem.txt');
 exports.solution = fs.createReadStream(__dirname + '/solution.txt');
 
-exports.verify = verify({ modeReset: true }, function (args, t) {
+exports.verify = verify({ modeReset: true, name: 'ex-6'}, function (args, t) {
+
+
   var f = require(path.resolve(args[0]));
 
-  t.equal(typeof f, 'object', 'does not export a JSON object' );
-  t.equal(f.hasOwnProperty('username'), true, 'does not export a JSON with name ' );
-  t.equal(typeof f.username, 'string', 'does not export string name ' );
+  var l = [1,2,3];
 
-  fs.writeFileSync(sender.USERNAME_FILE, f.username);
-
-  sender.send('ex-0');
+  t.equal(typeof f, 'function', 'does not export a function');
+  t.equal(f(l).length, l.length, 'returned array has different size' );
+  t.equal(f(l).indexOf(1)>-1, true, 'returned array does not contain same elements' );
+  t.equal(f(l).indexOf(2)>-1, true, 'returned array does not contain same elements' );
+  t.equal(f(l).indexOf(3)>-1, true, 'returned array does not contain same elements' );
 
   t.end();
+
 });

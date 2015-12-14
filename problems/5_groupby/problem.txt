@@ -1,6 +1,6 @@
-Given a JSON with a list of movies with title and Id,
+Given a JSON with a list of movies with title,
 write a function that group them by title,
-like the following example.
+like the following example:
 
 
 Input:
@@ -41,7 +41,7 @@ Example module exercise.js:
 module.exports = function groupby(input) {
 
   var output = [];
-  
+
   // some magic from input to output
 
   return output;

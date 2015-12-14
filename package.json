@@ -16,6 +16,7 @@
   "dependencies": {
     "adventure": "^2.2.0",
     "adventure-verify": "^2.1.1",
-    "request": "^2.67.0"
+    "request": "^2.67.0",
+    "tap-parser": "^1.2.2"
   }
 }

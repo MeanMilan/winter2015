@@ -1,7 +1,6 @@
 var fs = require('fs');
 var path = require('path');
 var verify = require('adventure-verify');
-var sender = require('../../sender');
 
 exports.problem = fs.createReadStream(__dirname + '/problem.txt');
 exports.solution = fs.createReadStream(__dirname + '/solution.txt');
@@ -17,13 +16,11 @@ var output = [
   {"genre":"Animation","titles":["Inside out"]}
 ];
 
-exports.verify = verify({ modeReset: true }, function (args, t) {
+exports.verify = verify({ modeReset: true, name:'ex-5' }, function (args, t) {
   var f = require(path.resolve(args[0]));
 
   t.equal(typeof f, 'function', 'does not export a function' );
   t.deepEqual(f(input), output, 'does not behave like expected' );
-
-  sender.send('ex-5');
 
   t.end();
 });
