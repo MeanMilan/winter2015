@@ -11,6 +11,7 @@ function lessthen(str, n) {
 }
 
 exports.verify = verify({ modeReset: true }, function (args, t) {
+
   var f = require(path.resolve(args[0]));
 
   t.equal(typeof f, 'function', 'you exported a function');

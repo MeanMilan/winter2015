@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A small competition for a challenging xmas party. Happy coding!",
   "bin": {
-    "example-adventure": "runner.js"
+    "mm-xmas": "runner.js"
   },
   "author": "Link-me",
   "license": "MIT",

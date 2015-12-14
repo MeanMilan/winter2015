@@ -7,6 +7,7 @@ module.exports.USERNAME_FILE = USERNAME_FILE;
 const SERVER = 'http://mean.link-me.it:3000';
 
 module.exports.send = function(name) {
+  console.error('sender..');
 
   try {
     var username = fs.readFileSync(USERNAME_FILE, 'utf8');
@@ -26,6 +27,8 @@ module.exports.send = function(name) {
     method: 'post',
     body: postData,
     json: true
+  }, function(e, n) {
+    console.log(e, n.body);
   });
 
 }
