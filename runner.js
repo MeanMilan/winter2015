@@ -12,7 +12,7 @@ function getDirectories(srcpath) {
   });
 }
 
-var problems = getDirectories('./problems');
+var problems = getDirectories(path.join(_dirname, 'problems') );
 
 problems.forEach(function (prob) {
     shop.add(prob, function () { return require('./problems/' + prob) });
