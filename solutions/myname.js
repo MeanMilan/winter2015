@@ -1,3 +1,3 @@
 module.exports = {
-  username: 'foo'
+  username: 'dudee'
 }

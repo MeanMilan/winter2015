@@ -27,7 +27,8 @@ module.exports.send = function(name) {
     body: postData,
     json: true
   }, function(e, n) {
-    console.log(e, n.body);
+    if(e) console.log(e);
+    else if(n) console.log(n.body)
   });
 
 }

@@ -57,6 +57,7 @@ module.exports = function (opts, fn) {
         });
         stream.pipe(parser(function (results) {
           if(results.ok) {
+            console.log('*******');
             sender.send(opts.name)
           }
           cb(results.ok)
