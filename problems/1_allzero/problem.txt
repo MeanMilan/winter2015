@@ -3,10 +3,18 @@ given an undefined number of arguments as Number
 return true if all are zero.
 The program must be less then 140 character!
 
-  module.exports = function(arguments) { ... }
 
-Save that code into a file, YOUR_PROGRAM.js (you can name it whatever you like)
-and then:
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+Example module exercise.js:
 
-  Use `$ADVENTURE_COMMAND verify YOUR_PROGRAM.js` to verify your program.
-  Use `$ADVENTURE_COMMAND run YOUR_PROGRAM.js` to run your program.
+module.exports = function all_zero(arguments) {
+
+  // HINT: google for 'javascript arguments'
+  //       if you don't have any good ideas
+
+  var ret = // true or false?
+
+  return ret;
+}

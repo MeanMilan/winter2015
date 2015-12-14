@@ -1,16 +1,17 @@
 {
-  "name": "example-adventure",
+  "name": "mm-xmas",
   "version": "1.0.1",
-  "description": "example of using adventure to make nodeschool challenges",
+  "description": "A small competition for a challenging xmas party. Happy coding!",
   "bin": {
     "example-adventure": "runner.js"
   },
-  "author": "YOUR NAME HERE",
+  "author": "Link-me",
   "license": "MIT",
   "keywords": [
     "nodeschool",
     "adventure",
-    "education"
+    "competition",
+    "challenge"
   ],
   "dependencies": {
     "adventure": "^2.2.0",

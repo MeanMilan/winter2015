@@ -1,17 +1,14 @@
-Implement upperCase function (limited to first 127 ASCII character):
-
-NOTE: you cannot use javascript built-in `toUpperCase`.
+Write a function that shuffle an array.
 
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 Example module exercise.js:
 
-module.exports = function uppercase (input) {
+module.exports = function shuffle(input) {
 
-  var output = '';
-
-  // magic on output here
+  var output = [];
+  // some magic from input to output
 
   return output;
 }

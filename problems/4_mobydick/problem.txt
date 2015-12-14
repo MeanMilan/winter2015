@@ -1,2 +1,16 @@
-Count the most popular word (more then 4 character) in Moby Dick full text.
-You can find the complete txt in PATH/data/mobydick.txt
+Count the most frequent word (more then 4 character) in the given sentece.
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+Example module exercise.js:
+
+module.exports = function word_histogram (input_test_as_string) {
+
+  var count;
+
+  // magic here
+
+  return count;
+}

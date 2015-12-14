@@ -3,14 +3,16 @@
 var adventure = require('adventure');
 var shop = adventure('example-adventure');
 
-var problems = [
-  '0_myname',
-  '1_allzero',
-  '2_countsundays',
-  '3_uppercase',
-  '4_mobydick',
-  '5_groupby'
-];
+var fs = require('fs'),
+    path = require('path');
+
+function getDirectories(srcpath) {
+  return fs.readdirSync(srcpath).filter(function(file) {
+    return fs.statSync(path.join(srcpath, file)).isDirectory();
+  });
+}
+
+var problems = getDirectories('./problems');
 
 problems.forEach(function (prob) {
     shop.add(prob, function () { return require('./problems/' + prob) });

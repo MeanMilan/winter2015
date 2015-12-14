@@ -1,7 +1,7 @@
-# example-adventure
+# MEAN MILANO XMAS COMPETITION
 
-This package is an example that you can use to get started writing
-[nodeschool](http://nodeschool.io) challenges using
+Based on [nodeschool](http://nodeschool.io) using
 [adventure](https://npmjs.org/package/adventure).
 
-Just fork this repo to start building your very own nodeschool adventure!
+A small competition for a challenging xmas party.
+Happy coding!
