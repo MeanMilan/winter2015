@@ -17,6 +17,8 @@
     "adventure": "^2.2.0",
     "adventure-verify": "^2.1.1",
     "request": "^2.67.0",
-    "tap-parser": "^1.2.2"
+    "tap-colorize": "^1.2.0",
+    "tap-parser": "^1.2.2",
+    "tape": "^4.2.2"
   }
 }
